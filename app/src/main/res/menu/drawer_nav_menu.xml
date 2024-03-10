@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            android:iconTint="@color/b"
+            tools:ignore="HardcodedText,UnusedAttribute"/>
+        <item
+            android:id="@+id/airplanemode"
+            android:iconTint="@color/b"
+            android:icon="@drawable/airplanemode"
+            android:title="Airplane Mode"
+            tools:ignore="HardcodedText,UnusedAttribute"/>
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/share"
+            android:title="Share"
+            android:iconTint="@color/b"
+            tools:ignore="HardcodedText,UnusedAttribute"/>
+        <item
+            android:id="@+id/settings"
+            android:iconTint="@color/b"
+            android:title="Settings"
+            android:icon="@drawable/settings"
+            tools:ignore="HardcodedText,UnusedAttribute"/>
+        <item
+            android:id="@+id/delete"
+            android:icon="@drawable/delete"
+            android:iconTint="@color/b"
+            android:title="Delete"
+            tools:ignore="HardcodedText,UnusedAttribute"/>
+        <item
+            android:id="@+id/bluetooth"
+            android:iconTint="@color/b"
+            android:icon="@drawable/bluetooth"
+            android:title="Bluetooth"
+            tools:ignore="HardcodedText,UnusedAttribute"/>
+
+</menu>
