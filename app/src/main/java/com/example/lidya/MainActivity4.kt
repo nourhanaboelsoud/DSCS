@@ -4,20 +4,25 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity4 : AppCompatActivity() {
+
+    private lateinit var btn7 : Button
+    private lateinit var btn8 : Button
+    private lateinit var fab3: FloatingActionButton
+
     @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        val btn6 = findViewById<Button>(R.id.btn6)
-        val btn8 = findViewById<TextView>(R.id.btn8)
+        inialztion()
 
 
-        btn6.setOnClickListener {
+
+        btn7.setOnClickListener {
             val intent2 = (Intent(this, MainActivity6::class.java))
             startActivity(intent2)
 
@@ -29,5 +34,18 @@ class MainActivity4 : AppCompatActivity() {
 
 
         }
+
+       fab3.setOnClickListener {
+            val intent = (Intent(this, MainActivity2::class.java))
+            startActivity(intent)
+        }
+    }
+
+    private fun inialztion() {
+        btn7 = findViewById(R.id.btn7)
+        btn8 = findViewById(R.id.btn8)
+        fab3 = findViewById(R.id.fab3)
     }
 }
+
+

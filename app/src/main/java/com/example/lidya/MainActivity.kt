@@ -9,13 +9,19 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var btn1 : Button
+    private lateinit var btn2 : Button
+
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btn1 = findViewById<Button>(R.id.btn3)
-        val btn2 = findViewById<Button>(R.id.btn4)
+        inialztion()
+
+        val btn1 = findViewById<Button>(R.id.btn1)
+        val btn2 = findViewById<Button>(R.id.btn2)
 
 
         btn1.setOnClickListener {
@@ -28,6 +34,13 @@ class MainActivity : AppCompatActivity() {
             val intent2 = (Intent(this, MainActivity5::class.java))
             startActivity(intent2)
         }
-    }
 
     }
+    private fun inialztion()
+    {  btn1 = findViewById(R.id.btn1)
+        btn2 = findViewById(R.id.btn2)
+
+        }
+    }
+
+
