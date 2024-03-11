@@ -139,6 +139,7 @@
         android:text="Create Account"
         android:textColor="#64A1BD"
         android:textSize="32sp"
+        android:typeface="serif"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
