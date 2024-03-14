@@ -76,6 +76,7 @@
             android:textColor="#64A1BD"
             android:textSize="60sp"
             tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck,TextContrastCheck" />
+
     </LinearLayout>
 
 

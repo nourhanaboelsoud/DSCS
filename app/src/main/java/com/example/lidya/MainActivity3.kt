@@ -32,7 +32,7 @@ class MainActivity3 : AppCompatActivity() {
 
         }
 
-       fab2.setOnClickListener {
+        fab2.setOnClickListener {
             val intent = (Intent(this, MainActivity2::class.java))
             startActivity(intent)
         }
@@ -44,5 +44,4 @@ class MainActivity3 : AppCompatActivity() {
         fab2 = findViewById(R.id.fab2)
 
     }
-    }
-
+}
