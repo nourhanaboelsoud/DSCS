@@ -9,9 +9,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class MainActivity2 : AppCompatActivity() {
-   lateinit var  btn3 : Button
-   lateinit var  btn4 : Button
-   lateinit var fab1 : FloatingActionButton
+   private lateinit var  btn3 : Button
+   private lateinit var  btn4 : Button
+   private lateinit var fab1 : FloatingActionButton
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)

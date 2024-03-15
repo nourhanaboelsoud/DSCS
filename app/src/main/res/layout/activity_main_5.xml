@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2196F3"
+    android:background="#64A1BD"
     tools:ignore="MissingPrefix">
 
     <androidx.constraintlayout.widget.Guideline
@@ -21,8 +20,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="ExtraText">
 
 
@@ -52,12 +53,10 @@
             android:layout_marginTop="130dp"
             android:text="delete"
             android:textSize="24sp"
-            app:backgroundTint="@color/b"
+            app:backgroundTint="#64A1BD"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText"
-            tools:ignore="DuplicateIds,HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck"/>
-
-
+            tools:ignore="DuplicateIds,HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck" />
 
         <Button
             android:id="@+id/button1"
@@ -68,13 +67,30 @@
             android:layout_marginTop="130dp"
             android:text="Refresh"
             android:textSize="24sp"
-            app:backgroundTint="@color/b"
+            app:backgroundTint="#64A1BD"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText"
             tools:ignore="DuplicateIds,HardcodedText,RtlHardcoded,TextContrastCheck,TextSizeCheck" />
-        android:layout_background="color/white"
+
+        <ScrollView
+            android:layout_width="157dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="100dp"
+            android:background="#64A1BD"
+            android:backgroundTint="#64A1BD"
+            app:layout_constraintBottom_toTopOf="@+id/editTextText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+        </ScrollView>
+
 
     </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/textView2"
@@ -93,16 +109,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.311"
-        tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
+        tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck,TextContrastCheck" />
 
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="652dp"
-        app:menu="@menu/botton_nav_menu"
-        tools:ignore="MissingConstraints">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>

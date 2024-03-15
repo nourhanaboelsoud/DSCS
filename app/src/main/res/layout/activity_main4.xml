@@ -43,41 +43,26 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:text="Don't have an account?"
-                    tools:ignore="HardcodedText" />
+                    android:textColor="#64A1BD"
+                    tools:ignore="HardcodedText,InefficientWeight,TextContrastCheck" />
 
-                <TextView
+                <Button
                     android:id="@+id/btn8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0"
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/white"
                     android:text="Sign Up"
                     android:textColor="#64A1BD"
+                    android:textSize="10sp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:ignore="DuplicateIds,HardcodedText,MissingConstraints,SmallSp,TextContrastCheck,TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="206dp" />
             </LinearLayout>
 
-            <Button
-                android:id="@+id/btn6"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="90dp"
-                android:layout_marginEnd="16dp"
-                android:text="SIGNIN"
-                android:textColor="#64A1BD"
-                android:textSize="30sp"
-                app:backgroundTint="@color/white"
-                app:cornerRadius="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-                app:layout_constraintVertical_bias="0.187"
-                tools:ignore="HardcodedText" />
-
             <TextView
-                android:id="@+id/forgetpassword"
+                android:id="@+id/forgetpassword2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -87,7 +72,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-                tools:ignore="HardcodedText,RtlHardcoded" />
+                tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
 
             <EditText
                 android:id="@+id/editTextTextPassword"
@@ -114,33 +99,52 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="Autofill,HardcodedText,LabelFor,TextContrastCheck,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="90dp"
+                android:text="SIGNIN"
+                android:textColor="#64A1BD"
+                android:textSize="30sp"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+                app:layout_constraintVertical_bias="0.187"
+                tools:ignore="HardcodedText,TextContrastCheck"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="264dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
+        android:id="@+id/fab3"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
         android:clickable="true"
         app:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow_back"
         app:tint="#64A1BD"
-        tools:ignore="ContentDescription,KeyboardInaccessibleWidget,RtlHardcoded,SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,ImageContrastCheck,KeyboardInaccessibleWidget,MissingConstraints,RtlHardcoded,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
         android:layout_marginBottom="137dp"
         android:text="Welcome To   DSCS"
         android:textColor="@color/white"
@@ -151,6 +155,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText,RtlHardcoded" />
+        tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

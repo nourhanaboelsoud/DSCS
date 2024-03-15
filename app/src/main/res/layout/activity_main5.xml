@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btn3"
+    android:id="@+id/btn1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#64A1BD"
@@ -23,38 +23,23 @@
         android:layout_width="400dp"
         android:layout_height="98dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="60dp"
-        android:text=" Create Account"
+        android:text=" Create New Account"
         android:textColor="@color/white"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="90dp"
-        android:text="SIGN UP"
-        android:textColor="#64A1BD"
-        android:textSize="34sp"
-        android:typeface="serif"
-        app:backgroundTint="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,DuplicateSpeakableTextCheck" />
+        tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck,TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="350dp"
         android:background = "@drawable/cricle"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="224dp"
         android:ems="10"
         android:hint="EMAIL"
@@ -62,7 +47,7 @@
         android:padding="10dp"
         android:textColor="@color/black"
         android:textColorHighlight="@color/white"
-        android:textSize="34sp"
+        android:textSize="28sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -70,20 +55,23 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText,TextContrastCheck" />
 
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab3"
+        android:id="@+id/fab4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="339dp"
         android:clickable="true"
         app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow_back"
         app:tint="#64A1BD"
-        tools:ignore="ContentDescription,KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
-
+        tools:ignore="ContentDescription,KeyboardInaccessibleWidget,MissingConstraints,SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -92,11 +80,11 @@
         android:layout_marginTop="296dp"
         android:ems="10"
         android:background = "@drawable/cricle"
-        android:hint="USERNAME"
+        android:hint="PHONE"
         android:inputType="text"
         android:textColor="@color/black"
         android:textColorHighlight="@color/white"
-        android:textSize="34sp"
+        android:textSize="28sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -115,7 +103,7 @@
         android:inputType="text"
         android:textColor="@color/black"
         android:textColorHighlight="@color/white"
-        android:textSize="34sp"
+        android:textSize="28sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -134,13 +122,30 @@
         android:inputType="text"
         android:textColor="@color/black"
         android:textColorHighlight="@color/white"
-        android:textSize="34sp"
+        android:textSize="28sp"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,MissingConstraints,TextContrastCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="86dp"
+        android:text="Create Account"
+        android:textColor="#64A1BD"
+        android:textSize="32sp"
+        android:typeface="serif"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
